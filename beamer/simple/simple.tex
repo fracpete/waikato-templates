@@ -1,0 +1,109 @@
+\documentclass[xcolor=pdftex,dvipsnames,table]{beamer}
+
+\usepackage[english]{babel}
+\usepackage{hyperref}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{frametitle}
+{%
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.95\paperwidth,ht=0.8cm,left]{frametitle}%
+    \usebeamerfont{frametitle}\insertframetitle%
+  \end{beamercolorbox}%
+  }%
+  \newline%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.95\paperwidth,ht=0.01cm,left]{title in head/foot}%
+    \hrule%
+  \end{beamercolorbox}%
+  }%
+}
+\setbeamertemplate{footline}
+{%
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,left]{title in head/foot}%
+    \usebeamerfont{author in head/foot}\hspace{0.2cm}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{title in head/foot}%
+    \usebeamerfont{date in head/foot}\insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}%
+  }%
+  \vskip0pt%
+}
+
+\title[Short title of talk]{This is the very long title of this amazing talk about some cool stuff}
+\author[J Doe]{John Doe}
+\institute[UoW]{University of Waikato, Hamilton, NZ}
+\date[Date or Conf]{Date or Conference}
+
+\begin{document}
+
+\usebackgroundtemplate{%
+  \hspace{\paperwidth}%
+  \makebox[0pt][r]{\includegraphics[width=30mm]{images/coat_of_arms.pdf}}%
+}
+
+% title page
+
+{
+\setbeamertemplate{headline}{} 
+\setbeamertemplate{footline}{} 
+\begin{frame}
+  \titlepage
+\end{frame}
+}
+\addtocounter{framenumber}{-1}
+
+% toc
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents
+\end{frame}
+
+% content
+
+\section{Introduction}
+\subsection{Something}
+
+\begin{frame}
+  \frametitle{Something}
+  Documentation on Beamer:
+  \begin{itemize}
+    \item \href{http://mirror.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf}{Beamer User Guide}
+    \item \href{http://www.tug.org/pracjourn/2005-4/mertz/mertz.pdf}{By Example}
+    \item \href{http://www.cpt.univ-mrs.fr/~masson/latex/Beamer-appearance-cheat-sheet.pdf}{Appearance cheat sheet}
+  \end{itemize}
+\end{frame}
+
+\subsection{Other stuff}
+\begin{frame}
+  \frametitle{Other stuff}
+\end{frame}
+
+\section{New stuff}
+
+\begin{frame}
+ \frametitle{New stuff}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}
+ \frametitle{Conclusion}
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Questions?}
+ \begin{center}
+   Thank you for your time
+ \end{center}
+\end{frame}
+
+\end{document}

@@ -1,7 +1,7 @@
 waikato-templates
 =================
 
-Templates for presentations in LateX and LibreOffice format.
+Templates for presentations and letters in LateX and LibreOffice format.
 
 University of Waikato branded.
 
